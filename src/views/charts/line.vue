@@ -1,16 +1,14 @@
 <template>
-  <div class="components-container" style='height:100vh'>
-    <div class='chart-container'>
-      <chart height='100%' width='100%'></chart>
-    </div>
+  <div class="chart-container">
+    <chart height="100%" width="100%" />
   </div>
 </template>
 
 <script>
-import Chart from '@/components/Charts/lineMarker'
+import Chart from '@/components/Charts/LineMarker'
 
 export default {
-  name: 'lineChart',
+  name: 'LineChart',
   components: { Chart }
 }
 </script>
@@ -19,7 +17,7 @@ export default {
 .chart-container{
   position: relative;
   width: 100%;
-  height: 80%;
+  height: calc(100vh - 84px);
 }
 </style>
 
